@@ -5,7 +5,7 @@ import './index.css';
 import store from './Store';
 import { Provider } from 'react-redux';
 
-// Provider is to inject the store to our app
+// Provider is a wrapper to inject the store to our app. 
 ReactDOM.render(
   <Provider store = { store }>
       <App />

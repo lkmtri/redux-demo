@@ -19,10 +19,12 @@ class Button extends Component {
     }
 }
 
+// inject storeDispatcher as props to Button component
 const mapDispatchToProps = dispatch => {
     return {
         storeDispatcher: dispatch
     }
 }
 
+// First argument is null since this component doesn't listen to the store
 export default connect(null, mapDispatchToProps)(Button)

@@ -11,6 +11,8 @@ class Counter extends Component {
     }
 }
 
+// only listen to changes in the counter field of the store
+// pass the value of the counter field as connectToCounter props to the Counter component
 const mapStateToProps = state => {
     return {
         connectToCounter: state.counter
